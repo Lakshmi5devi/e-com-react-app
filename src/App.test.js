@@ -1,8 +1,19 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import logo from './logo.svg';
+import './App.css';
+import Header from './CommonComponents/Header';
+
+function App() {
+  return (
+    <div className="App">
+      {/* <header className="App-header">
+        
+      </header> */}
+
+      <Header></Header>
+
+    </div>
+  );
+}
+
+export default App;
